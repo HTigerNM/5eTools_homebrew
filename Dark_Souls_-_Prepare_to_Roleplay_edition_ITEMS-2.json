@@ -1,0 +1,1964 @@
+{
+  "siteVersion": "1.133.2",
+  "_meta": {
+    "sources": [
+      {
+        "json": "DSptRP",
+        "abbreviation": "DSptRP",
+        "full": "Dark Souls - Prepare to Roleplay edition",
+        "url": "",
+        "authors": [
+          "Gu"
+        ],
+        "color": "fc6f03",
+        "convertedBy": []
+      }
+    ],
+    "dateAdded": 1628005199,
+    "dateLastModified": 1628005199
+  },
+  "monster": [
+    {
+      "name": "Hollow prisoner",
+      "shortName": true,
+      "source": "DSptRP",
+      "size": "M",
+      "type": "undead",
+      "alignment": [
+        "N"
+      ],
+      "ac": [
+        10
+      ],
+      "hp": {
+        "formula": "3d8 + 9",
+        "average": 20
+      },
+      "speed": {
+        "walk": 30
+      },
+      "str": 13,
+      "dex": 14,
+      "con": 16,
+      "int": 5,
+      "wis": 6,
+      "cha": 5,
+      "save": {
+        "str": "+3",
+        "con": "+5"
+      },
+      "skill": {
+        "stealth": "+4",
+        "perception": "+0",
+        "athletics": "+3"
+      },
+      "passive": 10,
+      "cr": "1",
+      "action": [
+        {
+          "name": "Broken sword",
+          "entries": [
+            "{@atk mw} {@hit 3} to hit, reach 5 ft., one target. {@h}4 ({@damage 1d6 + 1}) slashing damage."
+          ]
+        },
+        {
+          "name": "Bow",
+          "entries": [
+            "{@atk rw} {@hit 4} to hit, range 30/60 ft., one target. {@h}5 ({@damage 1d6 + 2}) piercing damage."
+          ]
+        },
+        {
+          "name": "Hollow screams (1/Day)",
+          "entries": [
+            "The hollow prisoner wails and screams causing every non-hollow in its vicinity to make a {@dc 12} Wisdom saving throw. On a failure a creature takes 5({@dice 2d4}) psychic damage and has disadvantage on attack rolls until the start of the hollow's next turn. On a success a creature takes half as much and suffers no penalty. A creature that is immune to be {@condition frightened} is immune to this effect"
+          ]
+        }
+      ],
+      "damageTags": [
+        "P",
+        "S"
+      ],
+      "miscTags": [
+        "MW",
+        "RW"
+      ]
+    },
+    {
+      "name": "Torch hollow",
+      "shortName": true,
+      "source": "DSptRP",
+      "size": "M",
+      "type": "undead",
+      "alignment": [
+        "N"
+      ],
+      "ac": [
+        10
+      ],
+      "hp": {
+        "formula": "3d8 + 9",
+        "average": 20
+      },
+      "speed": {
+        "walk": 30
+      },
+      "str": 13,
+      "dex": 14,
+      "con": 16,
+      "int": 5,
+      "wis": 6,
+      "cha": 5,
+      "save": {
+        "str": "+3",
+        "con": "+5"
+      },
+      "skill": {
+        "stealth": "+4",
+        "perception": "+0",
+        "athletics": "+3"
+      },
+      "passive": 10,
+      "cr": "1",
+      "trait": [
+        {
+          "name": "Arsonist charge",
+          "entries": [
+            "if the torch hollow moves at least 15 ft. during it's turn it can make one additional attack that turn"
+          ]
+        }
+      ],
+      "action": [
+        {
+          "name": "Torch",
+          "entries": [
+            "{@atk mw} {@hit 3} to hit, reach 5 ft., one target. {@h}2 bludgeoning damage, plus 3 ({@damage 1d6}) fire damage."
+          ]
+        }
+      ],
+      "damageTags": [
+        "B",
+        "F"
+      ],
+      "miscTags": [
+        "MW"
+      ]
+    },
+    {
+      "name": "Asylum Demon",
+      "source": "DSptRP",
+      "size": "L",
+      "type": {
+        "type": "fiend",
+        "tags": [
+          "demon"
+        ]
+      },
+      "alignment": [
+        "L",
+        "N"
+      ],
+      "ac": [
+        {
+          "ac": 13,
+          "from": [
+            "natural armor"
+          ]
+        }
+      ],
+      "hp": {
+        "formula": "4d10 + 20",
+        "average": 42
+      },
+      "speed": {
+        "walk": 30
+      },
+      "str": 16,
+      "dex": 12,
+      "con": 20,
+      "int": 12,
+      "wis": 10,
+      "cha": 12,
+      "save": {
+        "str": "+6",
+        "con": "+8"
+      },
+      "skill": {
+        "perception": "+3",
+        "athletics": "+9"
+      },
+      "senses": [
+        "darkvision 120 ft."
+      ],
+      "passive": 13,
+      "resist": [
+        "fire"
+      ],
+      "languages": [
+        "Demonic"
+      ],
+      "cr": "3",
+      "action": [
+        {
+          "name": "Mace",
+          "entries": [
+            "{@atk mw} {@hit 6} to hit, reach 10 ft., one target. {@h}7 ({@damage 1d8 + 3}) bludgeoning damage."
+          ]
+        },
+        {
+          "name": "Ground pound",
+          "entries": [
+            "The asylum demon flies for a brief time before slamming down with its weight. As part of this action the demon moves up to 10 ft. then every creature under or in a range of 5 ft. from it makes a {@dc 14} Strength saving trow. On a fail a creature takes 10 ({@damage 3d6}) bludgeoning damage and it's knocked {@condition prone}. on a success a creature takes half damage and it's not knocked {@condition prone}. Every creature that was caught in the effect gets pushed 5 ft. away  from the demon regardless of the result of the saving trhow."
+          ]
+        }
+      ],
+      "senseTags": [
+        "SD"
+      ],
+      "damageTags": [
+        "B"
+      ],
+      "miscTags": [
+        "MW",
+        "RCH"
+      ],
+      "conditionInflict": [
+        "prone"
+      ]
+    },
+    {
+      "name": "Hollow soldier",
+      "shortName": true,
+      "source": "DSptRP",
+      "size": "M",
+      "type": "undead",
+      "alignment": [
+        "N"
+      ],
+      "ac": [
+        {
+          "ac": 17,
+          "from": [
+            "{@item breastplate|phb}",
+            "{@item shield|phb}"
+          ]
+        }
+      ],
+      "hp": {
+        "formula": "3d8 + 9",
+        "average": 22
+      },
+      "speed": {
+        "walk": 30
+      },
+      "str": 15,
+      "dex": 12,
+      "con": 16,
+      "int": 5,
+      "wis": 6,
+      "cha": 5,
+      "save": {
+        "str": "+4",
+        "con": "+5"
+      },
+      "skill": {
+        "athletics": "+4"
+      },
+      "passive": 8,
+      "cr": "2",
+      "action": [
+        {
+          "name": "Longsword",
+          "entries": [
+            "{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d8 + 2}) slashing damage."
+          ]
+        }
+      ],
+      "damageTags": [
+        "S"
+      ],
+      "miscTags": [
+        "MW"
+      ]
+    },
+    {
+      "name": "Hollow militia",
+      "shortName": true,
+      "source": "DSptRP",
+      "size": "M",
+      "type": "undead",
+      "alignment": [
+        "N"
+      ],
+      "ac": [
+        {
+          "ac": 15,
+          "from": [
+            "{@item leather armor|phb}",
+            "{@item shield|phb}"
+          ]
+        }
+      ],
+      "hp": {
+        "formula": "3d8 + 6",
+        "average": 19
+      },
+      "speed": {
+        "walk": 30
+      },
+      "str": 15,
+      "dex": 12,
+      "con": 14,
+      "int": 5,
+      "wis": 6,
+      "cha": 5,
+      "save": {
+        "str": "+4",
+        "con": "+4"
+      },
+      "skill": {
+        "athletics": "+4"
+      },
+      "passive": 8,
+      "cr": "2",
+      "action": [
+        {
+          "name": "Shortsword",
+          "entries": [
+            "{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d6 + 2}) slashing damage."
+          ]
+        },
+        {
+          "name": "Granade toss (1/Day)",
+          "entries": [
+            "As an action, he light this bomb and throw it at a point up to 60 feet away. Each creature within 5 feet of that point must succeed on a {@dc 12} Dexterity saving throw or take {@damage 3d6} fire damage."
+          ]
+        }
+      ],
+      "damageTags": [
+        "S"
+      ],
+      "miscTags": [
+        "AOE",
+        "MW"
+      ]
+    },
+    {
+      "name": "Hollow militia grenadier",
+      "shortName": true,
+      "source": "DSptRP",
+      "size": "M",
+      "type": "undead",
+      "alignment": [
+        "N"
+      ],
+      "ac": [
+        {
+          "ac": 13,
+          "from": [
+            "{@item leather armor|phb}"
+          ]
+        }
+      ],
+      "hp": {
+        "formula": "3d8 + 6",
+        "average": 19
+      },
+      "speed": {
+        "walk": 30
+      },
+      "str": 15,
+      "dex": 12,
+      "con": 14,
+      "int": 5,
+      "wis": 6,
+      "cha": 5,
+      "save": {
+        "str": "+4",
+        "con": "+4"
+      },
+      "skill": {
+        "athletics": "+4"
+      },
+      "passive": 8,
+      "cr": "2",
+      "action": [
+        {
+          "name": "Shortsword",
+          "entries": [
+            "{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d6 + 2}) slashing damage."
+          ]
+        },
+        {
+          "name": "Granade toss (5/Day)",
+          "entries": [
+            "As an action, he light this bomb and throw it at a point up to 60 feet away. Each creature within 5 feet of that point must succeed on a {@dc 12} Dexterity saving throw or take {@damage 3d6} fire damage."
+          ]
+        }
+      ],
+      "damageTags": [
+        "S"
+      ],
+      "miscTags": [
+        "AOE",
+        "MW"
+      ]
+    },
+    {
+      "name": "Hollow militia axeman",
+      "shortName": true,
+      "source": "DSptRP",
+      "size": "M",
+      "type": "undead",
+      "alignment": [
+        "N"
+      ],
+      "ac": [
+        {
+          "ac": 13,
+          "from": [
+            "{@item leather armor|phb}"
+          ]
+        }
+      ],
+      "hp": {
+        "formula": "3d8 + 10",
+        "average": 23
+      },
+      "speed": {
+        "walk": 30
+      },
+      "str": 16,
+      "dex": 12,
+      "con": 14,
+      "int": 5,
+      "wis": 6,
+      "cha": 5,
+      "save": {
+        "str": "+5",
+        "con": "+4"
+      },
+      "skill": {
+        "athletics": "+5"
+      },
+      "passive": 8,
+      "cr": "2",
+      "action": [
+        {
+          "name": "Waraxe",
+          "entries": [
+            "{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}8 ({@damage 1d10 + 3}) damage."
+          ]
+        }
+      ],
+      "damageTags": [
+        "S"
+      ],
+      "miscTags": [
+        "MW"
+      ]
+    },
+    {
+      "name": "Hollow soldier spearman",
+      "shortName": true,
+      "source": "DSptRP",
+      "size": "M",
+      "type": "undead",
+      "alignment": [
+        "N"
+      ],
+      "ac": [
+        {
+          "ac": 17,
+          "from": [
+            "{@item breastplate|phb}",
+            "{@item shield|phb}"
+          ]
+        }
+      ],
+      "hp": {
+        "formula": "3d8 + 15",
+        "average": 28
+      },
+      "speed": {
+        "walk": 30
+      },
+      "str": 15,
+      "dex": 12,
+      "con": 16,
+      "int": 5,
+      "wis": 6,
+      "cha": 5,
+      "save": {
+        "str": "+4",
+        "con": "+5"
+      },
+      "skill": {
+        "athletics": "+4"
+      },
+      "passive": 8,
+      "cr": "2",
+      "action": [
+        {
+          "name": "Spear",
+          "entries": [
+            "{@atk mw} {@hit 4} to hit, reach 10 ft., one target. {@h}5 ({@damage 1d6 + 2}) damage."
+          ]
+        }
+      ],
+      "damageTags": [
+        "S"
+      ],
+      "miscTags": [
+        "MW",
+        "RCH"
+      ]
+    },
+    {
+      "name": "Hollow soldier crossbowman",
+      "shortName": true,
+      "source": "DSptRP",
+      "size": "M",
+      "type": "undead",
+      "alignment": [
+        "N"
+      ],
+      "ac": [
+        {
+          "ac": 15,
+          "from": [
+            "{@item breastplate|phb}"
+          ]
+        }
+      ],
+      "hp": {
+        "formula": "3d8 + 9",
+        "average": 22
+      },
+      "speed": {
+        "walk": 30
+      },
+      "str": 12,
+      "dex": 15,
+      "con": 16,
+      "int": 5,
+      "wis": 6,
+      "cha": 5,
+      "save": {
+        "str": "+3",
+        "con": "+5"
+      },
+      "skill": {
+        "athletics": "+3"
+      },
+      "passive": 8,
+      "cr": "2",
+      "action": [
+        {
+          "name": "Longsword",
+          "entries": [
+            "{@atk mw} {@hit 3} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d8 + 1}) slashing damage."
+          ]
+        },
+        {
+          "name": "Light crossbow",
+          "entries": [
+            "{@atk rw} {@hit 4} to hit, range 80/320 ft., one target. {@h}6 ({@damage 1d8 + 2}) damage."
+          ]
+        }
+      ],
+      "tokenUrl": "https://5e.tools/img/DSptRP/Hollow prisoner.png?v=1.102.7",
+      "damageTags": [
+        "S"
+      ],
+      "miscTags": [
+        "MW",
+        "RNG",
+        "RW"
+      ]
+    },
+    {
+      "name": "Giant Rat (DS)",
+      "source": "DSptRP",
+      "page": 327,
+      "size": "S",
+      "type": "beast",
+      "alignment": [
+        "U"
+      ],
+      "ac": [
+        12
+      ],
+      "hp": {
+        "formula": "2d6 + 3",
+        "average": 10
+      },
+      "speed": {
+        "walk": 30
+      },
+      "str": 7,
+      "dex": 15,
+      "con": 11,
+      "int": 2,
+      "wis": 10,
+      "cha": 4,
+      "senses": [
+        "darkvision 60 ft."
+      ],
+      "passive": 10,
+      "cr": "1/2",
+      "trait": [
+        {
+          "name": "Keen Smell",
+          "entries": [
+            "The rat has advantage on Wisdom ({@skill Perception}) checks that rely on smell."
+          ]
+        },
+        {
+          "name": "Pack Tactics",
+          "entries": [
+            "The rat has advantage on an attack roll against a creature if at least one of the rat's allies is within 5 feet of the creature and the ally isn't {@condition incapacitated}."
+          ]
+        }
+      ],
+      "action": [
+        {
+          "name": "Bite",
+          "entries": [
+            "{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}4 ({@damage 1d4 + 2}) piercing damage. Any creature hit by the rat's bite attack must succede on a dc 14 saving trow or suffer 4 ({@damage 2d4}) poison damage and are {@condition poisoned} for 1 minute"
+          ]
+        }
+      ],
+      "traitTags": [
+        "Keen Senses",
+        "Pack Tactics"
+      ],
+      "senseTags": [
+        "D"
+      ],
+      "damageTags": [
+        "I",
+        "P"
+      ],
+      "miscTags": [
+        "MW"
+      ]
+    },
+    {
+      "name": "Taurus demon",
+      "source": "DSptRP",
+      "size": "L",
+      "type": {
+        "type": "fiend",
+        "tags": [
+          "demon"
+        ]
+      },
+      "alignment": [
+        "L",
+        "N"
+      ],
+      "ac": [
+        {
+          "ac": 15,
+          "from": [
+            "natural armor"
+          ]
+        }
+      ],
+      "hp": {
+        "formula": "8d10 + 20",
+        "average": 64
+      },
+      "speed": {
+        "walk": 40
+      },
+      "str": 23,
+      "dex": 3,
+      "con": 19,
+      "int": 6,
+      "wis": 13,
+      "cha": 14,
+      "save": {
+        "str": "+9",
+        "dex": "-1",
+        "con": "+7",
+        "wis": "+4"
+      },
+      "skill": {
+        "perception": "+4"
+      },
+      "senses": [
+        "darkvision 120 ft."
+      ],
+      "passive": 14,
+      "languages": [
+        "Demonic"
+      ],
+      "cr": "5",
+      "trait": [
+        {
+          "name": "Leap",
+          "entries": [
+            "The taurus demon can leap for 15 feet if he foregoes his movement, this movement does not provoke attacks of opportunity, the first attack of the taurus demon after a leap deals an extra 4 ({@damage 1d8}) bludgeoning damage. If the target is a creature, it must succeed on a {@dc 17} Strength saving throw or be knocked {@condition prone}, in addition this extra damage is dealt to any creature in 5 ft of the target and they also need to pass the same saving throw or be knocked {@condition prone}. (Doesn't work with Sweeping hammer blow)"
+          ]
+        },
+        {
+          "name": "Siege Monster",
+          "entries": [
+            "The taurus demon deals double damage to objects and structures."
+          ]
+        }
+      ],
+      "action": [
+        {
+          "name": "Multiattack",
+          "entries": [
+            "The taurus demon makes two attacks: one with its hammer and one with its hoof."
+          ]
+        },
+        {
+          "name": "Sweeping hammer blow",
+          "entries": [
+            "The taurus demon makes 1 attack with its hammer, this attack also hits any creature within the reach of the hammer that are also within 10 ft of the target if they fail a dc 17 dexterity saving throw."
+          ]
+        },
+        {
+          "name": "Taurus hammer",
+          "entries": [
+            "{@atk mw} {@hit 9} to hit, reach 10 ft., one target. {@h}12 ({@damage 1d12 + 6}) bludgeoning damage."
+          ]
+        },
+        {
+          "name": "Hoof",
+          "entries": [
+            "{@atk mw} {@hit 9} to hit, reach 5 ft., one target. {@h}9 ({@damage 1d6 + 6}) bludgeoning damage. If the target is a creature, it must succeed on a {@dc 17} Strength saving throw or be pushed 15 ft away."
+          ]
+        }
+      ],
+      "traitTags": [
+        "Siege Monster"
+      ],
+      "senseTags": [
+        "SD"
+      ],
+      "actionTags": [
+        "Multiattack"
+      ],
+      "damageTags": [
+        "B"
+      ],
+      "miscTags": [
+        "MW",
+        "RCH"
+      ],
+      "conditionInflict": [
+        "prone"
+      ]
+    },
+    {
+      "name": "Black Knight",
+      "source": "DSptRP",
+      "size": "M",
+      "type": "humanoid",
+      "alignment": [
+        "L",
+        "G"
+      ],
+      "ac": [
+        {
+          "ac": 20,
+          "from": [
+            "Blck knight armor",
+            "Shield"
+          ]
+        }
+      ],
+      "hp": {
+        "average": 91,
+        "formula": "14d8 + 28"
+      },
+      "speed": {
+        "walk": 30
+      },
+      "str": 18,
+      "dex": 13,
+      "con": 14,
+      "int": 12,
+      "wis": 14,
+      "cha": 16,
+      "save": {
+        "str": "+7",
+        "con": "+5",
+        "cha": "+6"
+      },
+      "skill": {
+        "athletics": "+7",
+        "intimidation": "+6",
+        "acrobatics": "+4"
+      },
+      "passive": 12,
+      "resist": [
+        "fire"
+      ],
+      "languages": [
+        "Common"
+      ],
+      "cr": "6",
+      "trait": [
+        {
+          "name": "Heavy swinger",
+          "entries": [
+            "Once a turn when the black knight hits with one attack can force the target to make a contested athletics check, if the target looses it's knocked {@condition prone}, or pushed 15 ft away, or both."
+          ]
+        }
+      ],
+      "action": [
+        {
+          "name": "Multiattack",
+          "entries": [
+            "The knight attacks twice with its weapon."
+          ]
+        },
+        {
+          "name": "Greatsword",
+          "entries": [
+            "{@atk mw} {@hit 7} to hit, reach 5 ft., one target. {@h}11 ({@damage 2d6 + 4}) slashing damage."
+          ]
+        }
+      ],
+      "actionTags": [
+        "Multiattack"
+      ],
+      "languageTags": [
+        "C"
+      ],
+      "damageTags": [
+        "S"
+      ],
+      "miscTags": [
+        "MW"
+      ]
+    },
+    {
+      "name": "Balder Knight",
+      "shortName": true,
+      "source": "DSptRP",
+      "size": "M",
+      "type": "undead",
+      "alignment": [
+        "N"
+      ],
+      "ac": [
+        {
+          "ac": 17,
+          "from": [
+            "{@item breastplate|phb}",
+            "{@item shield|phb}"
+          ]
+        }
+      ],
+      "hp": {
+        "formula": "4d8 + 6",
+        "average": 24
+      },
+      "speed": {
+        "walk": 35
+      },
+      "str": 10,
+      "dex": 15,
+      "con": 16,
+      "int": 12,
+      "wis": 8,
+      "cha": 5,
+      "save": {
+        "dex": "+4",
+        "int": "+3"
+      },
+      "skill": {
+        "acrobatics": "+4",
+        "perception": "+1",
+        "investigation": "+3"
+      },
+      "passive": 11,
+      "cr": "3",
+      "trait": [
+        {
+          "name": "Fencer",
+          "entries": [
+            "The balder knight always gets advantage while delivering an attack of opportunity, furthermore if the attack of opportunity hits the balder knight regains his reaction"
+          ]
+        }
+      ],
+      "action": [
+        {
+          "name": "Estoc",
+          "entries": [
+            "{@atk mw} {@hit 4} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d8 + 2}) piercing damage."
+          ]
+        }
+      ],
+      "damageTags": [
+        "P"
+      ],
+      "miscTags": [
+        "MW"
+      ]
+    },
+    {
+      "name": "Balder Knight Elite",
+      "shortName": true,
+      "isNamedCreature": true,
+      "source": "DSptRP",
+      "size": "M",
+      "type": "undead",
+      "alignment": [
+        "N"
+      ],
+      "ac": [
+        {
+          "ac": 17,
+          "from": [
+            "{@item breastplate|phb}",
+            "{@item shield|phb}"
+          ]
+        },
+        {
+          "ac": 19,
+          "from": [
+            "Parry stance"
+          ],
+          "braces": true
+        }
+      ],
+      "hp": {
+        "formula": "4d8 + 12",
+        "average": 30
+      },
+      "speed": {
+        "walk": 35
+      },
+      "str": 10,
+      "dex": 16,
+      "con": 16,
+      "int": 12,
+      "wis": 8,
+      "cha": 5,
+      "save": {
+        "dex": "+5",
+        "int": "+3"
+      },
+      "skill": {
+        "acrobatics": "+5",
+        "perception": "+1",
+        "investigation": "+3"
+      },
+      "passive": 11,
+      "cr": "3",
+      "trait": [
+        {
+          "name": "Fencer",
+          "entries": [
+            "The balder knight always gets advantage while delivering an attack of opportunity, furthermore if the attack of opportunity hits the balder knight regains his reaction."
+          ]
+        },
+        {
+          "name": "Riposte",
+          "entries": [
+            "An elite balder knight attacks of opportunity is always a critical as long as that attack was rolled with advantage"
+          ]
+        }
+      ],
+      "action": [
+        {
+          "name": "Estoc",
+          "entries": [
+            "{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}7 ({@damage 1d8 + 3}) piercing damage."
+          ]
+        },
+        {
+          "name": "Parry stance",
+          "entries": [
+            "The balder knight enters a defensive stance getting all the benefits of the dodge action while simultaneously increasing his AC to 19. If an attacker within 5 ft. misses an attack the balder knight can perform an attack of opportunity"
+          ]
+        }
+      ],
+      "damageTags": [
+        "P"
+      ],
+      "miscTags": [
+        "MW"
+      ]
+    },
+    {
+      "name": "Berenike Knight",
+      "source": "DSptRP",
+      "size": "M",
+      "type": "undead",
+      "alignment": [
+        "N"
+      ],
+      "ac": [
+        {
+          "ac": 20,
+          "from": [
+            "Plate armor",
+            "Giant shield"
+          ]
+        }
+      ],
+      "hp": {
+        "formula": "10d10 + 30",
+        "average": 85
+      },
+      "speed": {
+        "walk": 30
+      },
+      "str": 18,
+      "dex": 8,
+      "con": 17,
+      "int": 8,
+      "wis": 10,
+      "cha": 10,
+      "save": {
+        "con": "+6",
+        "str": "+7"
+      },
+      "skill": {
+        "athletics": "+7",
+        "intimidation": "+3"
+      },
+      "passive": 10,
+      "resist": [
+        "slashing"
+      ],
+      "languages": [
+        "Common"
+      ],
+      "cr": "5",
+      "action": [
+        {
+          "name": "Multiattack",
+          "entries": [
+            "The knight attacks twice with its weapon."
+          ]
+        },
+        {
+          "name": "Mace",
+          "entries": [
+            "{@atk mw} {@hit 5} to hit, reach 10 ft., one target. {@h}7 ({@damage 1d8 + 3}) bludgeoning damage."
+          ]
+        },
+        {
+          "name": "Shield slam",
+          "entries": [
+            "The berenike knight attacks a creature with the shield, the target and up to 1 additional creature within 5 ft. of the target must make a dc 18 strength saving throw or be knocked {@condition prone} and take {@damage 2d8} bludgeoning damage. Creatures that pass the saving throw takes half damage and do not fall {@condition prone}."
+          ]
+        }
+      ],
+      "actionTags": [
+        "Multiattack"
+      ],
+      "languageTags": [
+        "C"
+      ],
+      "damageTags": [
+        "B"
+      ],
+      "miscTags": [
+        "MW",
+        "RCH"
+      ],
+      "conditionInflict": [
+        "prone"
+      ]
+    },
+    {
+      "name": "Gregory the channeler",
+      "shortName": true,
+      "isNpc": true,
+      "source": "DSptRP",
+      "level": 4,
+      "size": "M",
+      "type": "humanoid",
+      "alignment": [
+        "N"
+      ],
+      "ac": [
+        {
+          "ac": 17,
+          "from": [
+            "{@item splint armor|phb}"
+          ]
+        }
+      ],
+      "hp": {
+        "formula": "5d8 + 26",
+        "average": 48
+      },
+      "speed": {
+        "walk": 30
+      },
+      "str": 15,
+      "dex": 8,
+      "con": 14,
+      "int": 18,
+      "wis": 10,
+      "cha": 13,
+      "save": {
+        "int": "+6",
+        "wis": "+2"
+      },
+      "skill": {
+        "investigation": "+6",
+        "performance": "+3",
+        "religion": "+6",
+        "history": "+6",
+        "arcana": "+6",
+        "sleight of hand": "+1"
+      },
+      "passive": 10,
+      "cr": "4",
+      "spellcasting": [
+        {
+          "name": "Spellcasting",
+          "headerEntries": [
+            "Gregory is a 4th-level spellcaster. His spellcasting ability is Intelligence (spell save {@dc 14}, +4 to hit with spell attacks). Gregory has the following wizard spells prepared:"
+          ],
+          "spells": {
+            "0": {
+              "spells": [
+                "{@spell chill touch}",
+                "{@spell message}",
+                "{@spell mind sliver|TCE}",
+                "{@spell minor illusion}"
+              ]
+            },
+            "1": {
+              "spells": [
+                "{@spell absorb elements|XGE}",
+                "{@spell catapult|XGE}",
+                "{@spell cause fear|XGE}",
+                "{@spell ice knife|XGE}",
+                "{@spell magic missile}"
+              ],
+              "slots": 4
+            },
+            "2": {
+              "spells": [
+                "{@spell blur}",
+                "{@spell misty step}",
+                "{@spell ray of enfeeblement}",
+                "{@spell Tasha's mind whip|TCE}"
+              ],
+              "slots": 3
+            }
+          },
+          "ability": "int",
+          "type": "spellcasting"
+        }
+      ],
+      "action": [
+        {
+          "name": "Channeler's Trident",
+          "entries": [
+            "{@atk mw} {@hit 4} to hit, reach 10 ft., one target. {@h}6 ({@damage 1d6 + 3}) piercing damage, or 7 ({@damage 1d8 + 3}) piercing damage if used with both hands."
+          ]
+        },
+        {
+          "name": "Channeler's ritual dance",
+          "entries": [
+            "(1/Day) As an action the channeler performs a brief dance. He must chose up to 3 creatures as targets. For the next minute, as if concentrating on a spell, any target adds +4 (the channelers intelligence modifier) to the damage of it's weapon attacks, and the attack is considered magical in order to overcoming resistence."
+          ]
+        }
+      ],
+      "damageTags": [
+        "P"
+      ],
+      "spellcastingTags": [
+        "CW"
+      ],
+      "miscTags": [
+        "MW",
+        "RCH"
+      ]
+    },
+    {
+      "name": "Bell Gargoyle",
+      "source": "DSptRP",
+      "size": "L",
+      "type": "construct",
+      "alignment": [
+        "N"
+      ],
+      "ac": [
+        {
+          "ac": 18,
+          "from": [
+            "natural armor"
+          ]
+        }
+      ],
+      "hp": {
+        "formula": "10d12 + 30",
+        "average": 95
+      },
+      "speed": {
+        "walk": 40
+      },
+      "str": 18,
+      "dex": 16,
+      "con": 16,
+      "int": 8,
+      "wis": 13,
+      "cha": 12,
+      "save": {
+        "con": "+7",
+        "str": "+8"
+      },
+      "skill": {
+        "perception": "+5",
+        "stealth": "+11"
+      },
+      "passive": 15,
+      "resist": [
+        "piercing",
+        "slashing"
+      ],
+      "immune": [
+        "necrotic",
+        "poison"
+      ],
+      "vulnerable": [
+        "lightning"
+      ],
+      "conditionImmune": [
+        "charmed",
+        "exhaustion",
+        "petrified",
+        "poisoned"
+      ],
+      "languages": [
+        "Common"
+      ],
+      "cr": "6",
+      "trait": [
+        {
+          "name": "Immutable Form",
+          "entries": [
+            "The bell gargoyle is immune to any spell or effect that would alter its form."
+          ]
+        },
+        {
+          "name": "Limited Flight",
+          "entries": [
+            "The gargoyle can use a bonus action to gain a flying speed of 40 feet until the end of its turn."
+          ]
+        }
+      ],
+      "action": [
+        {
+          "name": "Multiattack",
+          "entries": [
+            "The gargoyle attacks twice, one with his weapon and one with it's tail"
+          ]
+        },
+        {
+          "name": "Gargoyle halberd",
+          "entries": [
+            "{@atk mw} {@hit 8} to hit, reach 10 ft., one target. {@h}9 ({@damage 1d10 + 4}) damage. If the target is a creature, it must succeed on a {@dc 16} Strength saving throw or be knocked back 5ft."
+          ]
+        },
+        {
+          "name": "Gargoyle tail",
+          "entries": [
+            "{@atk mw} {@hit 8} to hit, reach 10 ft., one target. {@h}8 ({@damage 1d8 + 4}) damage. If the target is a creature, it must succeed on a {@dc 16} Strength saving throw or be knocked 10ft to the side."
+          ]
+        },
+        {
+          "name": "Gargoyle Fire Breath {@recharge 5}",
+          "entries": [
+            "The gargoyle exhales fire in a 30-foot cone. Each creature in that area must make a {@dc 15} Dexterity saving throw, taking  {@h}13 ({@damage 3d8 }) fire damage on a failed save, or half as much damage on a successful one."
+          ]
+        }
+      ],
+      "traitTags": [
+        "Immutable Form"
+      ],
+      "actionTags": [
+        "Multiattack"
+      ],
+      "languageTags": [
+        "C"
+      ],
+      "damageTags": [
+        "F"
+      ],
+      "miscTags": [
+        "AOE",
+        "MW",
+        "RCH"
+      ]
+    },
+    {
+      "name": "Hollow assassin",
+      "shortName": true,
+      "source": "DSptRP",
+      "size": "M",
+      "type": "undead",
+      "alignment": [
+        "N"
+      ],
+      "ac": [
+        {
+          "ac": 14,
+          "from": [
+            "{@item leather armor|phb}"
+          ]
+        }
+      ],
+      "hp": {
+        "formula": "4d8 + 8",
+        "average": 26
+      },
+      "speed": {
+        "walk": 30
+      },
+      "str": 8,
+      "dex": 16,
+      "con": 14,
+      "int": 10,
+      "wis": 8,
+      "cha": 8,
+      "save": {
+        "dex": "+5",
+        "int": "+2"
+      },
+      "skill": {
+        "acrobatics": "+5",
+        "stealth": "+7",
+        "sleight of hand": "+7",
+        "intimidation": "+1",
+        "investigation": "+2",
+        "perception": "+1"
+      },
+      "passive": 11,
+      "resist": [
+        "poison"
+      ],
+      "cr": "3",
+      "trait": [
+        {
+          "name": "Sneak Attack",
+          "entries": [
+            "Once per turn, the hollow assassin deals an extra 7 ({@damage 2d6}) damage when it hits a target with a weapon attack and has advantage on the attack roll, or when the target is within 5 feet of an ally of the hollow assassin that isn't {@condition incapacitated} and the hollow assassin doesn't have disadvantage on the attack roll."
+          ]
+        }
+      ],
+      "action": [
+        {
+          "name": "Multiattack",
+          "entries": [
+            "The assassin attacks twice his daggers."
+          ]
+        },
+        {
+          "name": "Dagger",
+          "entries": [
+            "{@atk mw} {@hit 5} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d4 + 3}) piercing damage."
+          ]
+        },
+        {
+          "name": "Poisoned Throwing Knife",
+          "entries": [
+            "{@atk rw} {@hit 5} to hit, range 20/60 ft., one target. {@h}5 ({@damage 1d4 + 3}) piercing damage. A creature hit by bi the throwing knife must succeed a dc 14 constitution saving throw or be {@condition poisoned} for 1 minute."
+          ]
+        }
+      ],
+      "bonus": [
+        {
+          "name": "Cunning action",
+          "entries": [
+            "The assassin can {@action Dash}, {@action Disengage} and {@action Hide} as a bonus action."
+          ]
+        }
+      ],
+      "traitTags": [
+        "Sneak Attack"
+      ],
+      "actionTags": [
+        "Multiattack"
+      ],
+      "damageTags": [
+        "P"
+      ],
+      "miscTags": [
+        "MW",
+        "RW"
+      ],
+      "conditionInflict": [
+        "incapacitated",
+        "poisoned"
+      ]
+    },
+    {
+      "name": "The Houndmaster",
+      "shortName": true,
+      "isNpc": true,
+      "source": "DSptRP",
+      "level": 5,
+      "size": "M",
+      "type": "humanoid",
+      "alignment": [
+        "L",
+        "E"
+      ],
+      "ac": [
+        {
+          "ac": 14,
+          "from": [
+            "{@item leather armor|phb}"
+          ]
+        }
+      ],
+      "hp": {
+        "formula": "5d8 + 36",
+        "average": 58
+      },
+      "speed": {
+        "walk": 30
+      },
+      "str": 8,
+      "dex": 16,
+      "con": 14,
+      "int": 11,
+      "wis": 14,
+      "cha": 14,
+      "save": {
+        "dex": "+6",
+        "int": "+3"
+      },
+      "skill": {
+        "acrobatics": "+9",
+        "stealth": "+9",
+        "sleight of hand": "+9",
+        "intimidation": "+5",
+        "investigation": "+3",
+        "perception": "+5"
+      },
+      "passive": 15,
+      "resist": [],
+      "cr": "4",
+      "trait": [
+        {
+          "name": "Sneak Attack",
+          "entries": [
+            "Once per turn, the Houndmaster deals an extra 7 ({@damage 2d6}) damage when it hits a target with a weapon attack and has advantage on the attack roll, or when the target is within 5 feet of an ally of the hollow assassin that isn't {@condition incapacitated} and the hollow assassin doesn't have disadvantage on the attack roll."
+          ]
+        },
+        {
+          "name": "Pack Tactics",
+          "entries": [
+            "The the Houndmaster has advantage on an attack roll against a creature if at least one of the the houndmaster's allies is within 5 feet of the creature and the ally isn't {@condition incapacitated}."
+          ]
+        }
+      ],
+      "action": [
+        {
+          "name": "Multiattack",
+          "entries": [
+            "The Houndmaster attacks twice, in any combination of  her shortsword (max 1), dagger (max 1) and throwing knife."
+          ]
+        },
+        {
+          "name": "Shortsword",
+          "entries": [
+            "{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}6 ({@damage 1d6 + 3}) piercing damage."
+          ]
+        },
+        {
+          "name": "Dagger",
+          "entries": [
+            "{@atk mw} {@hit 6} to hit, reach 5 ft., one target. {@h}5 ({@damage 1d4 +3}) piercing damage."
+          ]
+        },
+        {
+          "name": "Poisoned Throwing Knife",
+          "entries": [
+            "{@atk rw} {@hit 5} to hit, range 20/60 ft., one target. {@h}5 ({@damage 1d4 +3}) piercing damage. A creature hit by the throwing knife must succeed a DC 14 constitution saving throw or be {@condition poisoned} for 1 minute."
+          ]
+        },
+        {
+          "name": "The Black Hand",
+          "entries": [
+            "The Houndmaster forces a humanoid within 5 ft. to make a dc 15 charisma saving throw. Upon failing this saving throw the target loses one of his humanities, if it has any, and is {@condition stunned} for a turn."
+          ]
+        }
+      ],
+      "bonus": [
+        {
+          "name": "Cunning Action",
+          "entries": [
+            "The Houndmaster can {@action Dash}, {@action Disengage} and {@action Hide} as a bonus action."
+          ]
+        },
+        {
+          "name": "Call the Hounds",
+          "entries": [
+            "The Houndmaster summons {@dice 1d4 +1} undead dogs ({@creature wolf} statistiscs)."
+          ]
+        }
+      ],
+      "traitTags": [
+        "Pack Tactics",
+        "Sneak Attack"
+      ],
+      "actionTags": [
+        "Multiattack"
+      ],
+      "damageTags": [
+        "P"
+      ],
+      "miscTags": [
+        "MW",
+        "RW"
+      ],
+      "conditionInflict": [
+        "incapacitated",
+        "poisoned",
+        "stunned"
+      ]
+    }
+  ],
+  "item": [
+    {
+      "name": "Incence of Nonagression",
+      "type": "OTH",
+      "rarity": "uncommon",
+      "source": "DSptRP",
+      "entries": [
+        "The smell of this incense can alter the mind of a creature making it impossible for it to harbor violent thoughts.",
+        "A stick can burn to a maximum of 1 hour, but this time can be spent in increments of 5 minutes (even if it burns for just a minute 5 minutes are spent).",
+        "When ignited the smell covers an area of 5 ft. around the burning stick, any creature that wishes to attack, or cast a spell with the intent of harming another creature must make a DC 14 charisma save. If the creature fails the thought of doing harm is replaced by some other tought or just disappears, causing the loss of the action (be it a Action, Bonus Action, or Reaction) with no consequences.",
+        "For the rest of its turn the creature cannot repeat the save and trying to attack or cast a harmful spell results in an automatic failure even if the creature moved away from the incense.",
+        "A strong wind can disperse the smoke, neutralizing the incense properties for one turn even if it doesn't put out the burning stick.",
+        "Conversely if used in a closed space, like a reasonably small room or a cave, the effects can become more powerful as the area is filled with the incense smell.",
+        "If left to burn in a closed space the area of effect increases by 5 ft. every round to a maximum of 50 ft. For a creature that stays in a room with the incense harming someone becomes continuously more difficult, to the point of becoming impossible. For every round a creature stays in the area of effect in a closed space the DC increases by 1 every turn.",
+        "If the save dc for a creature surpasses 20 leaving the area doesn't automatically remove the incense effects. For the following minute the creature needs to surpass saving throw to be able to do harm again, the DC of which decreases by 1 every round starting from 20 (even if the save for staying in the area was higher). Once a minute has passed or a check succeeded the lingering effect vanishes. If a creature with lingering effects reenters the area the starting DC is 14 or the last DC it had for the lingering effect, whichever is higher.",
+        "Covering mouth and nose or smelling something with a strong odor lowers any DC by 2.",
+        "While crafting an incense stick the creator can mix the blood of a creature to make it immune. Furthermore, if the creator mixed his own blood and spent a spell slot of any level while creating the incense, he gets the ability with a bonus action to suspend the effect on up to 10 creatures (no action required to make the effect \"restart\").",
+        "A creature who is immune to being {@condition charmed} is immune to the incense effect."
+      ]
+    },
+    {
+      "name": "Pine Resin",
+      "type": "OTH",
+      "rarity": "varies",
+      "source": "DSptRP",
+      "entries": [
+        "Rare pine resin which emits golden sparks. Chunks of it are even rarer. Its origins are unknown although some have speculated that it may in fact be a type of fungal resin.",
+        "Some individuals or cultures have found ways to change the base properties of this golden resin changing the effect when applied to a weapon.",
+        "Using your action you can apply the resin to a single melee or thrown weapon, for the next minute your weapon hits apply the appropriate effect based on the type of resin.",
+        "Only one resin can be applied to a weapon at one time, any new resin overrides the old one.",
+        {
+          "type": "table",
+          "colLabels": [
+            "Resin",
+            "Effect"
+          ],
+          "rows": [
+            [
+              "Golden",
+              "{@damage 1d6} extra Lightning damage"
+            ],
+            [
+              "Charcoal",
+              "{@damage 1d6} extra Fire damage"
+            ],
+            [
+              "Pale",
+              "{@damage 1d6} extra Force damage"
+            ],
+            [
+              "Human",
+              "{@damage 1d6} extra Necrotic damage"
+            ],
+            [
+              "Rotten",
+              "{@damage 1d4} extra Poison damage, if the target fails a DC 15 constitution saving throw it's {@condition poisoned} for 1 minute. An affected creature can repete the saving trhow at the end of it's turn"
+            ],
+            [
+              "Carthus Rouge",
+              "The weapon critically strikes on an 18, 19, or 20, instead on the normal 20. The hit still needs to surpass the enemy AC to deal damage."
+            ]
+          ]
+        },
+        {
+          "type": "variant",
+          "name": "Resin Bundle",
+          "entries": [
+            "A bundle is a smaller quantity of concentrated resin, it’s slightly more powerful and quicker to apply, but lasts exponentially less. A bundle has the following properties:",
+            {
+              "type": "list",
+              "items": [
+                "Applying it takes a bonus action instead of an action.",
+                "The effect only lasts until the start of your next turn.",
+                "Any damage dice is substituted as follows, a {@damage 1d4} becomes {@damage 1d6}, while {@damage 1d6} becomes {@damage 1d8}.",
+                "Any condition that allows a new saving throw on subsequent turns instead persists for the full duration without any rerolls."
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Covetous Golden Serpent Ring",
+      "type": "RG",
+      "rarity": "uncommon",
+      "reqAttune": true,
+      "source": "DSptRP",
+      "entries": [
+        "This gold ring, engraved with the serpent seems to find items on his own",
+        "While atuned to this ring at the end of a long rest  you can roll a d6. You'll find items as described in the table below.",
+        {
+          "type": "table",
+          "colLabels": [
+            "d6",
+            "Found item"
+          ],
+          "rows": [
+            [
+              "1",
+              "Nothing"
+            ],
+            [
+              "2",
+              "{@dice 1d4 +1} {@item Dart|PHB|trhowing knives}"
+            ],
+            [
+              "3",
+              "1 {@item Poisoned Throwing Knife|DSptRP}"
+            ],
+            [
+              "4",
+              "1 {@item Green Blossom|DSptRP}"
+            ],
+            [
+              "5",
+              "1 {@item Witching Urn|DSptRP}"
+            ],
+            [
+              "6",
+              "1 Golden {@item Pine Resin|DSptRP|Pine Resin Bundle}"
+            ]
+          ]
+        },
+        "This item is alrady in your inventory and you can use in normally. If you stil have the item at the end of the next rest you lose it in favor of the new roll."
+      ]
+    },
+    {
+      "name": "Blue Tearstone Ring",
+      "type": "RG",
+      "rarity": "uncommon",
+      "reqAttune": true,
+      "source": "DSptRP",
+      "entries": [
+        "The rare gem called tearstone has the uncanny ability to sense imminent death.",
+        "While atuned to this ring, if you are reduced to 0 hit points but not killed outright, you can drop to 1 hit point instead. You can't use this feature again until you finish a long rest."
+      ]
+    },
+    {
+      "name": "Sun Princess Ring",
+      "type": "RG",
+      "rarity": "rare",
+      "reqAttune": true,
+      "source": "DSptRP",
+      "entries": [
+        "Ring associated with Gwynevere, princess of sunlight and eldest daughter of Gwyn, the First Lord..",
+        "The ring is vaguely warm, like a beam of sunlight.",
+        "While attuned to this ring you can use the {@classFeature Lay on Hands|Paladin||1} feature as if you were a Paladin of a level equal to half your level rounded up.",
+        {
+          "type": "inset",
+					"entries": [
+					  "A Paladin that atunes to the ring simply expands his Lay on Hands pool by this amount."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Leo Ring",
+      "type": "RG",
+      "rarity": "legendary",
+      "reqAttune": true,
+      "ability": {
+        "str": 2
+      },
+      "source": "DSptRP",
+      "entries": [
+        "Ring associated with Dragon Slayer Ornstein, one of the Four Knights of Gwyn, the First Lord.",
+        "The ring represents a ramping lion.",
+        "While attuned to this ring get the following benefits:",
+        {
+          "type": "list",
+          "items": [
+            "Your Strength score is increased by 2.",
+            "You get the benefit of the {@optfeature Great Weapon Fighting|PHB|Great Weapon} fighting style .",
+            "You learn the {@optfeature Lunging Attack|PHB} and {@optfeature Grappling Strike|TCE} combat maneuvers. If a maneuver you use requires your target to make a saving throw to resist the maneuver's effects, the saving throw DC equals 8 + your proficiency bonus + your Strength or Dexterity modifier (your choice). You get 2 superiority dice which are {@dice d8}s. These dice are used to fuel your maneuvers. A superiority die is expended when you use it. You regain your expended superiority dice when you finish a short or long rest."
+          ]
+        },
+        {
+          "type": "inset",
+					"entries": [
+					  "A battlemaster that atunes to the ring gets {@b only one} additional superiority dice, and can use the above listed maneuvers as if he knows them, if he doesn't alrady"
+					]
+        }
+      ]
+    },
+    {
+      "name": "Wolf Ring",
+      "type": "RG",
+      "rarity": "legendary",
+      "reqAttune": true,
+      "ability": {
+        "str": 2
+      },
+      "source": "DSptRP",
+      "entries": [
+        "Ring associated with Abysswalker Artorias, one of the Four Knights of Gwyn, the First Lord.",
+        "The ring represents a howling wolf.",
+        "While attuned to this ring get the following benefits:",
+        {
+          "type": "list",
+          "items": [
+            "Your Strength score is increased by 2.",
+            "You get the benefit of the {@optfeature Defense|PHB} fighting style .",
+            "You learn the {@optfeature Pushing Attack|PHB} and {@optfeature Trip Attack|PHB} combat maneuvers. If a maneuver you use requires your target to make a saving throw to resist the maneuver's effects, the saving throw DC equals 8 + your proficiency bonus + your Strength or Dexterity modifier (your choice). You get 2 superiority dice which are {@dice d8}s. These dice are used to fuel your maneuvers. A superiority die is expended when you use it. You regain your expended superiority dice when you finish a short or long rest."
+          ]
+        },
+        {
+          "type": "inset",
+					"entries": [
+					  "A battlemaster that atunes to the ring gets {@b only one} additional superiority dice, and can use the above listed maneuvers as if he knows them, if he doesn't alrady"
+					]
+        }
+      ]
+    },
+    {
+      "name": "Hawk Ring",
+      "type": "RG",
+      "rarity": "legendary",
+      "reqAttune": true,
+      "ability": {
+        "dex": 2
+      },
+      "source": "DSptRP",
+      "entries": [
+        "Ring associated with Hawkeye Gough, one of the Four Knights of Gwyn, the First Lord.",
+        "The ring represents a hawk with stretched wings.",
+        "While attuned to this ring get the following benefits:",
+        {
+          "type": "list",
+          "items": [
+            "Your Dexterity score is increased by 2.",
+            "You get the benefit of the {@optfeature Archery|PHB} fighting style .",
+            "You learn the {@optfeature Bursting Arrow|XGE} and {@optfeature Seeking Arrow|XGE} arcane shots and can use it as a 3rd level Fighter. If a shot you use requires your target to make a saving throw to resist the shot's effects, the saving throw DC equals 8 + your proficiency bonus + your Strength or Dexterity modifier (your choice). Once per turn when you fire an arrow as part of the Attack action, you can apply one of your Arcane Shot options to that arrow. You decide to use the option when the arrow hits a creature, unless the option doesn't involve an attack roll. You have two uses of this ability, and you regain all expended uses of it when you finish a short or long rest."
+          ]
+        },
+        {
+          "type": "inset",
+					"entries": [
+					  "An arcane archer that atunes to the ring gets {@b only one} additional use of the arcane shot, and can use the above listed shots as if he knows them, if he doesn't alrady"
+					]
+        }
+      ]
+    },
+    {
+      "name": "Hornet Ring",
+      "type": "RG",
+      "rarity": "legendary",
+      "reqAttune": true,
+      "ability": {
+        "dex": 2
+      },
+      "source": "DSptRP",
+      "entries": [
+        "Ring associated with the Lord's Blade Ciaran, one of the Four Knights of Gwyn, the First Lord.",
+        "The ring represents a buzzing hornet.",
+        "While attuned to this ring get the following benefits:",
+        {
+          "type": "list",
+          "items": [
+            "Your Dexterity score is increased by 2.",
+            "You get the benefit of the {@optfeature Two-Weapon Fighting|PHB} fighting style .",
+            "You can use the {@classFeature Sneak Attack|Rogue||1} ability as a 3rd level Rogue (Meaning you deal {@dice 2d6} extra damage). You must fulfill all the normal prerequisites to deal this extra damage."
+          ]
+        },
+        {
+          "type": "inset",
+					"entries": [
+					  "A Rogue that atunes to the ring gets {@b only one} additional {@dice d6} of damage on his sneak attack."
+					]
+        }
+      ]
+    },
+    {
+      "name": "Poisoned Throwing Knife",
+      "type": "R",
+			"weaponCategory": "simple",
+			"dmg1": "1d4",
+			"dmgType": "P",
+			"property": [
+			  "F",
+				"T"
+			],
+			"range": "20/60",
+      "rarity": "none",
+      "source": "DSptRP",
+      "entries": [
+        {
+          "type": "entries",
+          "name": "Poisoned",
+          "entries": [
+            "A creature hit by this weapon must succeed a DC 14 constitution saving throw or be {@condition poisoned} for 1 minute.",
+            "Regardless of if the attack hits or not the knife loses the poisoned effect after being used once."
+          ]
+        }
+      ]
+    },
+    {
+			"name": "Witching Urn",
+			"type": "EXP",
+			"source": "DSptRP",
+			"range": "60",
+			"rarity": "uncommon",
+			"entries": [
+			  "A small clay urn filled with magic power.",
+				"As an action, a character can throw this urn at a point up to 60 feet away. Each creature within 5 feet of that point must succeed on a DC 12 Dexterity saving throw or take {@damage 3d6} force damage."
+			]
+		},
+		{
+			"name": "Green Blossom",
+			"type": "OTH",
+			"source": "DSptRP",
+			"rarity": "uncommon",
+			"entries": [
+			  "This uniquely bitter, biting herb is sometimes harvested in large quantities, but normally it is an annual plant found near water.",
+				"As an action, a character can eat the blossom. For the next minute the creature can use a bonus action to {@action Dash} or {@action Disengage}."
+			]
+		},
+		{
+      "name": "Gargoyle Tail Axe",
+      "type": "M",
+			"weaponCategory": "martial",
+			"dmg1": "1d12",
+			"dmgType": "S",
+			"property": [
+			  "H",
+				"2H"
+			],
+      "rarity": "none",
+      "source": "DSptRP",
+      "entries": [
+        {
+          "type": "entries",
+          "name": "Gargoyle tail swipe",
+          "entries": [
+            "Once a turn, when you use your action to attack with this weapon (meaning not on opportunity attacks), you can choose to extend the attack to multiple targets.",
+            "Select either 2 additional targets within 5 ft. of your original target, or 1 additional target within 10 ft. All the additional targets must be within your attack range to be selected for this effect.",
+            "You only roll the attack once, using the result against the respective AC of each target. You also roll the damage once, dealing that damage to any creature hit by the attack.",
+            "For every target after the first roll {@dice 1d10}, if the result of any of these rolls is greater than your proficiency bonus + the modifier of the statistic used to roll the attack, then you take damage as well."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Gargoyle Battleaxe",
+      "type": "M",
+			"weaponCategory": "martial",
+			"dmg1": "1d8",
+			"dmg2": "1d10",
+			"dmgType": "S",
+			"property": [
+			  "V"
+			],
+      "rarity": "none",
+      "source": "DSptRP",
+      "entries": [
+        {
+          "type": "entries",
+          "name": "Heavy swing",
+          "entries": [
+            "When you hit with this weapon you can use the weight of the blow to {@action shove} the target as part of the same action you used for the attack. When you successfully shove a creature with this ability you cannot do it again until you complete a long rest, alternatively you can take a level of exhaustion to recharge this ability."
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Channeler's Trident",
+      "type": "M",
+			"weaponCategory": "martial",
+			"dmg1": "1d6",
+			"dmg2": "1d8",
+			"dmgType": "S",
+			"property": [
+			  "T",
+			  "V"
+			],
+			"range": "20/60",
+			"focus": [
+        "Sorcerer",
+        "Warlock",
+        "Wizard"
+      ],
+      "reqAttune": true,
+      "rarity": "rare",
+      "source": "DSptRP",
+      "entries": [
+        "This trident can be used as an {@item Arcane Focus|PHB|arcane spelcasting focus}",
+        {
+          "type": "entries",
+          "name": "Channeler's ritual dance",
+          "entries": [
+            "While atuned to this weapon, as an action the wielder can perform a brief dance. You must chose up to 3 creatures as targets. For the next minute, as if concentrating on a spell, any target adds your intelligence modifier to the damage of it's weapon attacks, and the attack is considered magical in order to overcoming resistence.",
+            "Once you use this ability you cannot do it again until you complete a long rest."
+          ]
+        }
+      ]
+    },
+    {
+			"name": "Aspirant's Spice",
+			"type": "OTH",
+			"source": "DSptRP",
+			"rarity": "very rare",
+			"entries": [
+			  "A spell requires devotion, study and aptitude to be cast. This peculiar spice can substitute for all that and help anyone learn to cast a spell even if they lack the talent.",
+				"You can use this spice to learn a spell even if you normally wouldn't be able to, but you still need the help of someone who is able to cast the spell you are trying to learn, or, alternatively, a scroll with the spell transcribed on it.",
+				"There are two types of Aspirant's Spices and each can be used only to learn a spell of the appropriate spell lists.",
+				{
+          "type": "table",
+          "colLabels": [
+            "Name",
+            "Spell lists"
+          ],
+          "rows": [
+            [
+              "Simpleton's Spice",
+              "{@filter Artificer|spells|source=null|class=artificer},{@filter Bard|spells|source=null|class=bard}, {@filter Sorcerer|spells|source=null|class=sorcerer}, {@filter Warlock|spells|source=null|class=warlock} and {@filter Wizzard|spells|source=null|class=wizard|subclass=wizard: graviturgy;wizard: chronurgy} ({@i {@filter All|spells|source=null|class=artificer;bard;sorcerer;warlock;wizard|subclass=wizard: graviturgy;wizard: chronurgy}})"
+            ],
+            [
+              "Skeptic's Spice",
+              "{@filter Cleric|spells|source=null|class=cleric}, {@filter Druid|spells|source=null|class=druid}, {@filter Paladin|spells|source=null|class=paladin} and {@filter Ranger|spells|source=null|class=ranger} ({@i {@filter All|spells|source=null|class=cleric;druid;paladin;ranger}})"
+            ]
+				  ]
+				},
+				"You can only learn spells that are above 1st level and at least 1 level lower than your higher level spell slot.",
+				"From then on you add the spell to your known spells, and you can prepare it and cast it as if it was on your class spell list (If you have more than one you select witch upon learning the new spell).",
+				{
+					"type": "inset",
+					"entries": [
+					  "{@b If you don't have any spell slots}, you can only learn 1st level spells using the spice and you can cast it once per long rest. You must choose between Charisma, Intelligence or Wisdom as the statistic for casting the spell. If you later get spell slots you lose the ability to freely cast the spell and must refer to the rules above (You can change the statistic for casting the spell to that of your newly acquired spellcasting class)."
+					]
+				}
+			]
+		}
+  ]
+}
